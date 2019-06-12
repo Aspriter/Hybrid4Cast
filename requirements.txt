@@ -1,0 +1,8 @@
+setuptools==41.0.1
+numpy==1.16.3
+pandas==0.24.0
+statsmodels==0.9.0
+scipy==1.2.1
+tqdm==4.29.1
+Keras==2.2.4
+scikit_optimize==0.5.2
