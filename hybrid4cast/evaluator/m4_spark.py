@@ -264,21 +264,3 @@ class M4EvaluatorSpark(M4Evaluator):
 
         return pd.DataFrame(etsfit_rdd.collect(), \
                             columns=['m4_id', 'tslen', 'basea', 'longsea', 'trend', 't', 's', 'sp', 'd', 'ic'])
-
-
-
-'''
-draft for validation with Uber M4 data set
-input: list of TS data matrix
-
-1. train, val, test = []
-for each TS:
-    partition data into training/testing set
-    generate train_per_cpg, val_per_cpg, test_x_input using training set, 
-    save test set as real outpt for validation using testing set
-    train.append(train_per_cpg)
-    val.append(val_per_cpg)
-    test.append(test_per_cpg)
-
-2. use train, val to fit NN model, doing evaluation with test
-'''
